@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: "Rubik";
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+}
+input{
+    font-family: Rubik, sans-serif;
+}
+input::placeholder{
+    margin-right: -1000px;
+}
+.bold{
+    font-weight: 700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.gradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(261deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%);
+}
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.border_div{
+    border-left: solid black 1px;
+    height: 75px;
+    opacity: 0.1;
+}
+.width{
+    max-width: 120px;
+}
+.index{
+    z-index: 1000;
+}
+.placeholder{
+    text-align: center;
+}
+.small_text{
+    font-size: 10px;
 }
